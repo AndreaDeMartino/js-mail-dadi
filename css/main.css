@@ -72,7 +72,7 @@
 }
 
 .man-moving{
-  animation: move-man 1.5s linear;
+  animation: move-man 1s linear;
   position:absolute;
   bottom: 86px;
   left: 120px;
@@ -104,6 +104,11 @@
 .score{
   flex-basis: 100%;
   text-align: center;
+}
+
+.score i{
+  font-size: 40px;
+  padding-top: 10px;
 }
 
 

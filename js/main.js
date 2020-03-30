@@ -52,16 +52,60 @@ else if ( computerNumber == userNumber){
 // INTERAZIONE BUTTON
 var playButton = document.getElementById('play-button');
 var manImg = document.getElementById('man-img');
+var diceComputer;
+var dicePlayer;
+
+if ((userNumber) == 1){
+  dicePlayer = '<i class="fas fa-dice-one"></i>';
+}
+
+if (userNumber == 2){
+  dicePlayer = '<i class="fas fa-dice-two"></i>';
+}
+
+if (userNumber == 3){
+  dicePlayer = '<i class="fas fa-dice-three"></i>';
+}
+
+if (userNumber == 4){
+  dicePlayer = '<i class="fas fa-dice-four"></i>';
+}
+if (userNumber == 5){
+  dicePlayer = '<i class="fas fa-dice-five"></i>';
+}
+if (userNumber == 6){
+  dicePlayer = '<i class="fas fa-dice-six"></i>';
+}
+
+if ((computerNumber) == 1){
+  diceComputer = '<i class="fas fa-dice-one"></i>';
+}
+
+if (computerNumber == 2){
+  diceComputer = '<i class="fas fa-dice-two"></i>';
+}
+
+if (computerNumber == 3){
+  diceComputer = '<i class="fas fa-dice-three"></i>';
+}
+
+if (computerNumber == 4){
+  diceComputer = '<i class="fas fa-dice-four"></i>';
+}
+if (computerNumber == 5){
+  diceComputer = '<i class="fas fa-dice-five"></i>';
+}
+if (computerNumber == 6){
+  diceComputer = '<i class="fas fa-dice-six"></i>';
+}
 
 playButton.addEventListener('click', 
   function() {
     manImg.className = manImg.classList = 'man-moving';
     console.log(manImg.classList);
-    document.getElementById('player-score').innerHTML = 'USER SCORE:<br>' + userNumber;
-    document.getElementById('computer-score').innerHTML = 'COMPUTER SCORE:<br>' + computerNumber;
+    document.getElementById('player-score').innerHTML = 'PLAYER SCORE:<br>'+ dicePlayer;
+    document.getElementById('computer-score').innerHTML = 'COMPUTER SCORE:<br>' + diceComputer;
     document.getElementById('result').innerHTML = result;
-
-
   }
 );
 
