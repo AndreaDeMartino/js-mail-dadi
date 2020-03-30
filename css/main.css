@@ -96,7 +96,16 @@
 .main-footer{
   flex-grow: 1;
   background: #2c3e50;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
+
+.score{
+  flex-basis: 100%;
+  text-align: center;
+}
+
 
 
 /* Footer */
