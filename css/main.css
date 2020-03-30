@@ -107,8 +107,79 @@
 }
 
 .score i{
+  position: absolute;
+  left: 45%;
   font-size: 40px;
   padding-top: 10px;
+}
+
+.score-player i{
+  animation: rotation1 1.5s linear;
+}
+
+@keyframes rotation1 {
+  0%{
+    transform:rotate(20deg);
+    left: 0%;
+    content: '\f524';
+  }
+
+  25%{
+    transform:rotate(360deg);
+    left: 90%;
+  }
+
+  70%{
+    transform:rotate(20deg);
+    left: 5%;
+  }
+
+  100%{
+    transform:rotate(360deg);
+    left: 45%;
+  }
+}
+
+.computer-score i{
+  animation: rotation2 2s linear;
+}
+
+@keyframes rotation2 {
+  0%{
+    transform:rotate(20deg);
+    left: 5%;
+    content: '\f524';
+  }
+
+  25%{
+    transform:rotate(360deg);
+    left: 90%;
+  }
+
+  50%{
+    transform:rotate(20deg);
+    left: 5%;
+  }
+
+  75%{
+    transform:rotate(360deg);
+    left: 90%;
+  }
+
+  100%{
+    transform:rotate(20deg);
+    left: 45%;
+  }
+}
+
+.hidden{
+  opacity: 0;
+}
+
+.show{
+  opacity: 1;
+  transition: opacity 2s;
+  transition-delay: 2.5s;
 }
 
 
