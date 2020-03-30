@@ -1,9 +1,3 @@
-
-// Gioco dei dadi
-// generare un numero random da 1  a 6, sia per il giocatore sia per il computer
-// Stabilire il vincitore, in base a chi fa il punteggio più alto
-
-
 // Creo un array: 
 var emailList = ['michele@boolean.careers', 'fabio@boolean.careers', 'roberto@boolean.careers'];
 
@@ -21,3 +15,34 @@ for (var i = 0; i < emailList.length; i++){
 if( emailMatch != emailUser){
   console.log('Email Non Trovata');
 }
+
+// Gioco dei dadi
+
+// Genero un numero random da 1  a 6, sia per il giocatore sia per il computer:
+
+var userNumber;
+var computerNumber;
+
+userNumber = (Math.floor((Math.random() * 6) + 1));
+console.log('Punteggio Giocatore ' + userNumber);
+
+computerNumber = (Math.floor((Math.random() * 6) + 1));
+console.log('Punteggio Computer ' + computerNumber);
+
+
+// Stabilisco il vincitore, in base a chi fa il punteggio più alto:
+if( userNumber > computerNumber){
+  console.log("Il giocatore vince");
+}
+
+else if ( computerNumber > userNumber){
+  console.log("Il Computer vince");
+}
+
+else if ( computerNumber == userNumber){
+  console.log("Pareggio");
+}
+
+
+
+
